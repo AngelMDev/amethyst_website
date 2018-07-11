@@ -5,11 +5,10 @@
 			<div class="logo"><a href="#"><%=image_tag("amethyst_logo_transparent.png",width:"160px")%></a></div>
 			<nav class="main_nav">
 				<ul>
-					<li><a href="#">home</a></li>
-					<li><a href="categories.html">clothes</a></li>
-					<li><a href="categories.html">accessories</a></li>
-					<li><a href="categories.html">lingerie</a></li>
-					<li><a href="contact.html">contact</a></li>
+					<li><a href="#">inicio</a></li>
+					<li><%=link_to("productos", "categories")%></li>
+					<li><%=link_to("acerca de", "product")%></li>
+					<li><%=link_to("contacto", "contact")%></li>
 				</ul>
 			</nav>
 			<div class="header_content ml-auto">

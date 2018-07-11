@@ -12,6 +12,16 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require_tree ../plugins/
 //= require turbolinks
+//= jquery-ui
+//= require parallax.min
+//= require easing
+//= jquery.colorbox-min
+//= require isotope.pkgd.min
+//= require owl.carousel
+//= require TweenMax.min
+//= require TimelineMax.min
+//= require ScrollToPlugin.min
+//= require ScrollMagic.min
+//= require animation.gsap.min
 //= require_tree .
