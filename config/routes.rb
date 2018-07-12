@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users, skip: [:confirmations], skip_helpers: true
   root to: 'home#index'
   get 'home/index'
   get '/categories', to: 'home#categories'

@@ -48,6 +48,7 @@ body
 	font-weight: 400;
 	background: #FFFFFF;
 	color: #2f2f2f;
+	padding-top: 120px;
 }
 div
 {
@@ -55,7 +56,7 @@ div
 	position: relative;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 ul
 {

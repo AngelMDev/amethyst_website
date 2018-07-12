@@ -4,7 +4,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :description
       t.string :colors
-      t.string :type
+      t.string :tipo
     end
   end
 end

@@ -5,9 +5,6 @@ class HomeController < ApplicationController
   def contact
   end
 
-  def products
-  end
-
   def categories
   end
 end

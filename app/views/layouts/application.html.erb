@@ -19,7 +19,11 @@
   </head>
 
   <body>
-    <%= render "header" %>
-    <%= yield %>
+    <%= render partial: "partials/header" %>
+    <div class="super-container">
+      <%= yield %>
+    </div>
+
+    <%= render partial: "partials/footer" %>
   </body>
 </html>

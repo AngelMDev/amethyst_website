@@ -24,4 +24,5 @@
 //= require ScrollToPlugin.min
 //= require ScrollMagic.min
 //= require animation.gsap.min
+//= require activestorage
 //= require_tree .

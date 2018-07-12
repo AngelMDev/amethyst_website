@@ -10,7 +10,16 @@
       </ul>
     </div>
   <% end %>
-
+  Nombre:
+  <%= form.text_field :name %><br>
+  Descripcion:
+  <%= form.text_area :description %><br>
+  Color:
+  <%= form.text_field :colors %> Separar con comas varios colores<br>
+  Tipo:
+  <%= form.select(:tipo, [["Capas"],["Bufandas"],["Sweater"]]) %><br>
+  <br>
+  <%= form.file_field :images, multiple: true, direct_upload: true %>
   <div class="actions">
     <%= form.submit %>
   </div>

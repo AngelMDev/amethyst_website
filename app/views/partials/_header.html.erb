@@ -5,18 +5,18 @@
 			<div class="logo"><a href="#"><%=image_tag("amethyst_logo_transparent.png",width:"160px")%></a></div>
 			<nav class="main_nav">
 				<ul>
-					<li><a href="#">inicio</a></li>
-					<li><%=link_to("productos", "categories")%></li>
+					<li><%=link_to("home", "/")%></li>
+					<li><%=link_to("productos", "products")%></li>
 					<li><%=link_to("acerca de", "product")%></li>
 					<li><%=link_to("contacto", "contact")%></li>
 				</ul>
 			</nav>
 			<div class="header_content ml-auto">
 				<div class="search header_search">
-					<form action="#">
+					<%# <form action="#">
 						<input type="search" class="search_input" required="required">
 						<button type="submit" id="search_button" class="search_button"><img src="/assets/magnifying-glass.svg" alt=""></button>
-					</form>
+					</form> %>
 				</div>
 			</div>
 		</div>

@@ -1,3 +1,2 @@
-class Photo < ActiveRecord::Base{
-    belongs_to :product
-}
+class Photo < ActiveRecord::Base
+end
