@@ -13,7 +13,6 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= jquery-ui
 //= require parallax.min
 //= require easing
 //= jquery.colorbox-min

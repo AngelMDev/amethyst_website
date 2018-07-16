@@ -123,29 +123,7 @@
 6. 991px
 ************/
 
-@media only screen and (max-width: 991px)
-{
-	.main_nav
-	{
-		display: none;
-	}
-	.shopping
-	{
-		padding-right: 91px;
-	}
-	.section_title
-	{
-		font-size: 48px;
-	}
-	.product_content
-	{
-		margin-top: 63px;
-	}
-	.footer_nav ul li
-	{
-		margin-right: 30px;
-	}
-}
+
 
 /************
 7. 959px

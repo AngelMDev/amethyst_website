@@ -1,6 +1,45 @@
 <p id="notice"><%= notice %></p>
-<% @product.images.each do |image| %>
-  <%= image_tag image %> <br />
-<% end %>
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+	<!-- Product -->
+	<div class="product">
+		<div class="container">
+			<div class="row product_row">
+				<!-- Product Image -->
+				<div class="col-lg-7">
+					<div class="product_image">
+            <div class="container-product-slider">
+              <% @product.images.each.with_index(1) do |image,index| %>
+                <div class="product-slides">
+                  <div class="numbertext"><%= "#{index} / #{@product.images.length}" %></div>
+                  <img src="<%=url_for(image)%>" style="width:100%">
+                </div> 
+              <% end %>
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <div class="slider-thumbnail-row">
+                <% @product.images.each.with_index(1) do |image,index| %>
+                  <div class="slider-thumbnail-column">
+                    <img class="demo cursor" src="<%=url_for(image)%>" style="width:100%" onclick="currentSlide(<%=index%>)" alt="">
+                  </div>
+                <% end %>
+              </div>
+            </div>
+					</div>
+				</div>
+				<!-- Product Content -->
+				<div class="col-lg-5">
+					<div class="product_content">
+						<div class="product_name"><%=@product.name%></div>
+						<div class="product_text">
+							<p><%=@product.description%></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  <% if user_signed_in? %>
+    <%= link_to 'Edit', edit_product_path(@product) %> |
+    <%= link_to 'Back', products_path %>
+  <% end %>
+

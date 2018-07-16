@@ -39,7 +39,6 @@ class ProductsController < ApplicationController
       end
     end
     #@product.images.attach(params[:images])
-    redirect_to @product
   end
 
   # PATCH/PUT /products/1
@@ -64,6 +63,12 @@ class ProductsController < ApplicationController
       format.html { redirect_to products_url, notice: 'Product was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def delete_image
+    @image = ActiveStorage::Attachment.find(params[:id])
+    @image.purge
+    redirect_to products_url
   end
 
   private
